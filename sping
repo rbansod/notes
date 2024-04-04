@@ -1,0 +1,59 @@
+Question: What is inversion of control (IoC) in Spring Framework?
+Answer: Inversion of Control (IoC) in Spring refers to the design principle where the control of object creation and lifecycle is handed over to the Spring container rather than the application code. This allows for loose coupling and easier management of dependencies.
+
+Question: Explain the difference between BeanFactory and ApplicationContext in Spring.
+Answer: BeanFactory is the basic container interface in Spring, providing the fundamental functionality for managing beans. ApplicationContext is a sub-interface of BeanFactory, providing additional functionalities such as internationalization, event propagation, etc.
+
+Question: What is a Spring bean scope? List the different bean scopes supported by Spring.
+Answer: Bean scope defines the lifecycle and visibility of a bean instance within the Spring container. The different bean scopes supported by Spring are singleton, prototype, request, session, and global-session.
+
+Question: What is the purpose of the @Autowired annotation in Spring?
+Answer: The @Autowired annotation in Spring is used for automatic dependency injection. It allows Spring to automatically resolve and inject dependencies into a Spring bean.
+
+Question: Explain the concept of AOP (Aspect-Oriented Programming) in Spring.
+Answer: AOP in Spring enables cross-cutting concerns (e.g., logging, security, transaction management) to be modularized and separated from the core business logic. Aspects encapsulate these concerns and are applied to join points in the application.
+
+Question: How does Spring support transaction management?
+Answer: Spring supports transaction management through its declarative transaction management feature. It allows developers to specify transactional behavior using XML configuration or annotations, simplifying the management of database transactions.
+
+Question: What is Spring Boot, and how does it simplify Spring application development?
+Answer: Spring Boot is a framework built on top of the Spring Framework that simplifies the process of developing and deploying Spring applications. It provides auto-configuration, embedded application servers, and production-ready features out of the box, reducing the need for manual configuration.
+
+Question: How does Spring MVC differ from Spring WebFlux?
+Answer: Spring MVC is a traditional servlet-based web framework in Spring, utilizing synchronous blocking I/O. Spring WebFlux, on the other hand, is a reactive web framework that supports asynchronous and non-blocking I/O, suitable for building highly scalable and efficient applications.
+
+Question: What is the purpose of the @Transactional annotation in Spring?
+Answer: The @Transactional annotation is used to mark methods or classes as transactional, indicating that a transaction should be initiated for the annotated method or class. It ensures that the method or class executes within a transactional context, with proper commit or rollback behavior.
+
+Question: Explain the concept of dependency injection (DI) in Spring.
+Answer: Dependency injection is a design pattern where the dependencies of a class are injected from the outside rather than being created within the class itself. In Spring, DI is achieved through inversion of control (IoC), where dependencies are provided to beans by the Spring container.
+
+Question: What is the purpose of the @ComponentScan annotation in Spring?
+Answer: The @ComponentScan annotation is used to enable component scanning in Spring, allowing Spring to automatically detect and register Spring components such as @Component, @Service, @Repository, and @Controller.
+
+Question: Explain the role of the DispatcherServlet in Spring MVC.
+Answer: The DispatcherServlet is the front controller in Spring MVC responsible for intercepting incoming HTTP requests and dispatching them to the appropriate controller for processing. It acts as the central hub for request processing in a Spring MVC application.
+
+Question: How can you implement internationalization (i18n) in a Spring application?
+Answer: Internationalization in Spring can be implemented by using resource bundles and configuring message sources. Spring provides support for resolving messages based on the user's locale, allowing for the easy localization of application content.
+
+Question: What is the purpose of the @RequestMapping annotation in Spring MVC?
+Answer: The @RequestMapping annotation in Spring MVC is used to map web requests to specific handler methods in controller classes. It allows developers to define URL patterns and HTTP methods for handling incoming requests.
+
+Question: What is a Spring profile, and how can it be used in an application?
+Answer: A Spring profile is a set of configuration options that can be activated to customize the behavior of a Spring application based on the environment or deployment target. Profiles can be used to configure different beans, data sources, or properties for development, testing, and production environments.
+
+Question: How does Spring support asynchronous processing?
+Answer: Spring provides support for asynchronous processing through the @Async annotation and the TaskExecutor abstraction. By annotating methods with @Async, Spring allows them to execute asynchronously, offloading long-running tasks to separate threads managed by a TaskExecutor.
+
+Question: What is Spring Security, and how does it provide authentication and authorization?
+Answer: Spring Security is a powerful authentication and authorization framework for securing Spring-based applications. It provides comprehensive security features such as authentication, authorization, session management, and CSRF protection, allowing developers to secure their applications against various security threats.
+
+Question: What is the purpose of the @RestController annotation in Spring MVC?
+Answer: The @RestController annotation in Spring MVC is a specialized version of the @Controller annotation that combines @Controller and @ResponseBody. It is used to create RESTful web services in Spring MVC, where the return value of the handler methods is automatically serialized to JSON or XML.
+
+Question: How can you configure caching in a Spring application?
+Answer: Caching in Spring can be configured using annotations such as @Cacheable, @CachePut, and @CacheEvict. By annotating methods with these annotations, developers can specify caching behavior for the method results, improving application performance by caching frequently accessed data.
+
+Question: Explain the purpose of the Spring Boot Actuator.
+Answer: Spring Boot Actuator is a set of production-ready features provided by Spring Boot for monitoring and managing Spring applications. It includes endpoints for health checks, metrics, environment information, and more, allowing developers to monitor and manage their applications in production environments
